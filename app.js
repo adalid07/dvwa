@@ -25,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Define la ruta raíz "/"
+// Muestra página principal con enlaces a todas las vulnerabilidades, incluyendo SQL Injection (vulnerable y segura)
 app.get("/", (req, res) => {
 
     // Envía una respuesta HTML directamente al cliente
