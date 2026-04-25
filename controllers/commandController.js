@@ -63,6 +63,8 @@ exports.safe = (req, res) => {
   });
 };
 
+// Funciones para SQL Injection
+// formSql: Muestra formulario para búsqueda vulnerable de usuarios
 exports.formSql = (req, res) => {
   res.send(`
 <link rel="stylesheet" href="/style.css">
@@ -74,7 +76,7 @@ exports.formSql = (req, res) => {
 <a href="/">Back</a>
 `);
 };
-
+// vulnerableSql: Procesa búsqueda vulnerable - concatena input directamente en query (riesgo de inyección)
 exports.vulnerableSql = (req, res) => {
   const username = req.body.username || "";
   const query = `SELECT id, username, role FROM users WHERE username = '${username}'`;
@@ -93,7 +95,7 @@ exports.vulnerableSql = (req, res) => {
 `);
   });
 };
-
+// formSqlSafe: Muestra formulario para búsqueda segura de usuarios
 exports.formSqlSafe = (req, res) => {
   res.send(`
 <link rel="stylesheet" href="/style.css">
@@ -105,10 +107,11 @@ exports.formSqlSafe = (req, res) => {
 <a href="/">Back</a>
 `);
 };
-
+// safeSql: Procesa búsqueda segura - usa parámetros preparados y validación (previene inyección)
 exports.safeSql = (req, res) => {
   const username = req.body.username || "";
 
+  // Validación: solo permite alfanuméricos y _
   if (!/^[a-zA-Z0-9_]+$/.test(username)) {
     return res.send("Invalid username");
   }
