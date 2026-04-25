@@ -51,7 +51,7 @@ LabClass1/
 │   └── style.css               # Estilos CSS
 ├── package.json                # Dependencias del proyecto
 └── README.md                   # Este archivo
-
+```
 ## Dependencias
 
 - express: Framework web
