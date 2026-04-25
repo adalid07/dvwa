@@ -40,7 +40,7 @@ SQL Injection es una vulnerabilidad que permite a un atacante ejecutar comandos 
 3. Selecciona SQL Injection de la lista y pruébalo.
 
 ## Estructura del Proyecto
-
+```text
 LabClass1/
 ├── app.js                      # Archivo principal del servidor
 ├── routes/
