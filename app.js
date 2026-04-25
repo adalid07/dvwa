@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //rapha y Adalid (Aladin)
+=======
+//rapha y Adalid
+>>>>>>> origin/origin-rapha
 // Importa el framework Express para crear el servidor web
 const express = require("express");
 
