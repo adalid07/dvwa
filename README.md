@@ -145,9 +145,12 @@ Se inicializa automáticamente al arrancar el servidor.
 
 ⚠️ Este es un laboratorio educativo. Solo úsalo en entornos controlados y con autorización. No lo despliegues en producción.
 
-## Autor
+## Autors
 
-Adalid
+Adalid Claure
+Rafael Torres
+Victor Llivina
+Antonio Sanchez
 
 ## Licencia
 
